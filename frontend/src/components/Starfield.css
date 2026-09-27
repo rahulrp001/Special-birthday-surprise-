@@ -1,0 +1,15 @@
+.starfield {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.starfield__star {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--blush);
+  animation-name: twinkle;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}

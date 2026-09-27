@@ -1,0 +1,61 @@
+/* Shared keyframes used across components */
+
+@keyframes floatUp {
+  0% { transform: translateY(0) translateX(0) scale(var(--s, 1)); opacity: 0; }
+  10% { opacity: var(--o, 0.8); }
+  90% { opacity: var(--o, 0.8); }
+  100% { transform: translateY(-110vh) translateX(var(--drift, 20px)) scale(var(--s, 1)); opacity: 0; }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.15; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { text-shadow: 0 0 18px var(--glow-rose), 0 0 40px var(--glow-gold); }
+  50% { text-shadow: 0 0 32px var(--glow-rose), 0 0 60px var(--glow-gold); }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.12); }
+  40% { transform: scale(0.98); }
+  60% { transform: scale(1.08); }
+}
+
+@keyframes spinGlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes confettiFall {
+  0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(105vh) rotate(540deg); opacity: 0.9; }
+}
+
+@keyframes caretBlink {
+  0%, 45% { opacity: 1; }
+  50%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in { animation: fadeIn 0.9s var(--ease-soft) both; }
+.fade-slide-up { animation: fadeSlideUp 0.9s var(--ease-soft) both; }
+.zoom-in { animation: zoomIn 0.7s var(--ease-soft) both; }
+.glow-text { animation: glowPulse 3.2s ease-in-out infinite; }

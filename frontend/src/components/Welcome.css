@@ -1,0 +1,33 @@
+.welcome-line {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+  font-style: italic;
+  color: var(--blush-dim);
+  min-height: 1.4em;
+}
+
+.welcome-line--secondary {
+  margin-top: 18px;
+}
+
+.welcome-line--emphasis {
+  color: var(--rose-soft);
+  font-size: clamp(1.6rem, 4.5vw, 2.1rem);
+  margin-top: 10px;
+}
+
+.welcome-name {
+  margin: 30px 0;
+  font-size: clamp(3rem, 9vw, 4.5rem);
+  color: var(--blush);
+}
+
+.caret {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: var(--rose-soft);
+  margin-left: 4px;
+  vertical-align: -0.15em;
+  animation: caretBlink 1s steps(1) infinite;
+}

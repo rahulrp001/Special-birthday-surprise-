@@ -1,0 +1,27 @@
+[
+  {
+    "model": "birthday.reason",
+    "pk": 1,
+    "fields": {"title": "Your Smile", "description": "It turns an ordinary moment into the best part of my day.", "icon": "😊", "order": 1}
+  },
+  {
+    "model": "birthday.reason",
+    "pk": 2,
+    "fields": {"title": "Your Kindness", "description": "You notice people others walk past, and you make them feel seen.", "icon": "🌸", "order": 2}
+  },
+  {
+    "model": "birthday.reason",
+    "pk": 3,
+    "fields": {"title": "Your Beautiful Heart", "description": "Gentle with everyone, especially the people who don't say thank you.", "icon": "💖", "order": 3}
+  },
+  {
+    "model": "birthday.reason",
+    "pk": 4,
+    "fields": {"title": "How You Make People Happy", "description": "A room feels lighter the second you walk into it.", "icon": "✨", "order": 4}
+  },
+  {
+    "model": "birthday.reason",
+    "pk": 5,
+    "fields": {"title": "The Little Things You Do", "description": "The small, quiet things you do without ever asking for credit.", "icon": "🌙", "order": 5}
+  }
+]

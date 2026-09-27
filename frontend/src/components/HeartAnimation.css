@@ -1,0 +1,18 @@
+.heart-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.heart-field__heart {
+  position: absolute;
+  bottom: -10%;
+  color: var(--rose-soft);
+  filter: drop-shadow(0 0 6px var(--glow-rose));
+  animation-name: floatUp;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+}

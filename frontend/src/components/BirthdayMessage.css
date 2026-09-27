@@ -1,0 +1,28 @@
+.letter-card {
+  margin-top: 20px;
+  padding: 44px 38px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(30, 15, 42, 0.5), rgba(11, 6, 17, 0.5));
+  border: 1px solid rgba(247, 236, 233, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+  text-align: left;
+}
+
+.letter-card__line {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--blush-dim);
+  margin-bottom: 14px;
+}
+
+.letter-card__line:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .letter-card { padding: 30px 24px; }
+  .letter-card__line { font-size: 1.05rem; }
+}

@@ -1,0 +1,24 @@
+.surprise-scene {
+  transition: background 0.6s ease;
+}
+
+.surprise-scene--dark .glow-backdrop {
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 45%, var(--glow-rose), transparent 65%),
+    var(--void);
+}
+
+.surprise-scene h2 {
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  font-style: italic;
+  color: var(--blush);
+}
+
+.surprise-message__text {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 5vw, 2.3rem);
+  font-style: italic;
+  color: var(--rose-soft);
+  max-width: 560px;
+  margin: 0 auto;
+}
